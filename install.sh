@@ -20,7 +20,7 @@ bash -c 'echo "Documentation=man:syncthing(1)" >> /etc/systemd/system/syncthing@
 bash -c 'echo "After=network.target" >> /etc/systemd/system/syncthing@.service'
 bash -c 'echo "[Service]" >> /etc/systemd/system/syncthing@.service'
 bash -c 'echo "User=%i" >> /etc/systemd/system/syncthing@.service'
-bash -c 'echo "ExecStart=/usr/bin/syncthing -no-browser -gui-address="0.0.0.0:8384" -no-restart -logflags=0" >> /etc/systemd/system/syncthing@.servi>
+bash -c 'echo "ExecStart=/usr/bin/syncthing -no-browser -gui-address="0.0.0.0:8384" -no-restart -logflags=0" >> /etc/systemd/system/syncthing@.service'
 bash -c 'echo "Restart=on-failure" >> /etc/systemd/system/syncthing@.service'
 bash -c 'echo "SuccessExitStatus=3 4" >> /etc/systemd/system/syncthing@.service'
 bash -c 'echo "RestartForceExitStatus=3 4" >> /etc/systemd/system/syncthing@.service'
